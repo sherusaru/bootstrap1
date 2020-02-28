@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="form">
+        <form action="">
+            <fieldset class="field">
+                <legend id="legend">
+                    <h2>Registration Form</h2>
+                </legend>
+                <label for="name">Name:<span style="color: red;">*</span></label>
+                <input type="text" placeholder="Enter your full name" id="name" required><br><br>
+                <label for="email">Email:<span style="color: red;">*</span></label>
+                <input type="email" id="email" placeholder="xyz@gmail.com" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" name="number" id="age"><br><br>
+                <label for="address">Address:<span style="color: red;">*</span></label>
+                <input type="text" name="address" id="address" required><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" value="Male" name="gender">Male
+                <input type="radio" value="Female" name="gender">Female
+                <input type="radio" value="others" name="gender">Others<br><br>
+                <label for="dob">DOB:</label>
+                <input type="date" name="dob"><br><br>
+                <label for="">Select Your Model:</label>
+                <input list="cars" name="cars">
+                <datalist id="cars">
+                    <option value="Hyundai">
+                    <option value="Renault">
+                    <option value="Mahindra">
+                    <option value="TataMotors">
+                </datalist><br><br>
+                <label for="">Comments:</label><br>
+                <textarea name="description" id="" cols="60" rows="10"
+                    placeholder="Give Your Opinion"></textarea><br><br>
+                <input type="checkbox">I agree all the terms and conditions.<br><br>
+                <strong>Note:</strong>All the * field is required in the form.<br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
