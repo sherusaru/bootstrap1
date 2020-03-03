@@ -19,40 +19,43 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
-        <a class="nav-link" href="ansu.html">
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="ansu.html">
             <img src="images/logo.png" class="rounded" style="width: 50px;">
         </a>
-        <ul class="nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link text-warning" href="ansu.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-warning" href="#aboutus">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-warning" href="#" data-toggle="dropdown">Services</a>
-                <div class="dropdown-menu bg-dark">
-                    <a class="dropdown-item text-warning" href="#ourservices">Products</a>
-                    <a class="dropdown-item text-warning" href="#">Bookings</a>
-                    <a class="dropdown-item text-warning" href="#">Offers</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-warning" href="#contactus">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a href="bootstrapform.html" class="btn btn-outline-warning"><i class="fas fa-user-plus"></i> Sign
-                    Up</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="ansu.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#ourservices">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#contactus">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bootstrapform.html" class="btn btn-outline-warning"><i class="fas fa-user-plus"></i> Sign
+                        Up</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div class="container-fluid">
         <div class="row bg-info">
             <div class="col-lg-5 text-center">
                 <h4 class="text-white text-uppercase font-weight-bold"
                     style="font-family:'Courier New', Courier, monospace; padding-top: 120px;">Ansu Tech</h4>
-                <p class="text-white text-justify text-center" style="padding-top: 20px; line-height: 2.0rem;">We have been working with
+                <p class="text-white text-justify text-center" style="padding-top: 20px; line-height: 2.0rem;">We have
+                    been working with
                     clients to imagine and build software
                     that
                     people love
@@ -72,19 +75,21 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-4">
+    <!-- service section -->
+    <div class="container-fluid" style="background-color: lightyellow;">
         <div class="col-sm">
             <h1 class="text-center pt-3 font-weight-bold" id="ourservices">Our Services</h1>
             <hr class="bg-danger pt-1" style="width: 120px;">
-            <p class="text-center pt-3 font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            <p class="text-center pt-3 font-italic mb-0 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sequi
                 placeat<br>
                 perferendis eius cupiditate sint<br> saepe consequuntur autem quaerat explicabo. Libero, nemo <br>fugit
                 modi quas recusandae at maxime.</p>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: lightyellow;">
         <div class="row">
-            <div class="col-lg-4 pt-1 pb-1">
+            <div class="col-lg-4 pb-1">
                 <img src="images/12-Websites-You-Should-Check-Out-to-Learn-Web-Development-Fast.jpg"
                     class="img-thumbnail float-left" alt="responsive image" style="height: auto; width: 100%;">
                 <p class="text-center text-dark font-weight-bold">Front-End Development</p>
@@ -95,13 +100,13 @@
                 <p class="text-center text-dark font-weight-bold">Digital Marketing</p>
             </div>
             <div class="col-lg-4 pt-1 pb-1">
-                <img src="images/What-Is-Back-End-Development-1080x675.png" alt="Responsive Images" class="img-thumbnail float-right"
-                    style="height:auto; width: 100%;">
+                <img src="images/What-Is-Back-End-Development-1080x675.png" alt="Responsive Images"
+                    class="img-thumbnail float-right" style="height:auto; width: 100%;">
                 <p class="text-center text-dark font-weight-bold">Back-End Development</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid pl-0 pr-0 mt-4">
+    <div class="container-fluid pl-0 pr-0" style="background-color: lightyellow;">
         <h1 class="text-center pt-3 font-weight-bold" id="aboutus">About Us</h1>
         <hr class="bg-danger pt-1" style="width: 100px;">
         <div class="card img-fluid" style="width:100%;">
@@ -109,21 +114,22 @@
                 style="height: 500px;">
             <div class="card-img-overlay">
                 <h3 class="card-title text-center">Want To Be The Part Of Us?</h3>
-                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti<br>
+                <p class="card-text text-center" id="demo1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Corrupti<br>
                     architecto nemo non consequuntur necessitatibus<br> molestiae tenetur harum culpa error commodi
                     omnis eaque eum laudantium voluptas<br> asperiores quis voluptatum nobis</p>
-                <div class="text-center dropdown">
-                    <a href="#" class="btn btn-success dropdown-toggle btn-lg" data-toggle="dropdown">View More</a>
+                <div class="text-center">
+                    <button onclick="myFunction()" type="button" class="btn btn-success btn-lg"> View More!</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-4" id="contactus">
+    <div class="container-fluid" id="contactus" style="background-color: lightyellow;">
         <h1 class="text-center pt-3 font-weight-bold"> Contact Us!</h1>
         <hr class=" bg-danger pt-1" style="width: 110px;">
         <p class="text-muted text-center">Ready to start your next project with us? Give us a call or send us an email
             and we will get<br> back to you as soon as possible!</p>
-        <div class="row mb-5">
+        <div class="row">
             <div class="col-lg-4 ml-auto text-center">
                 <i class="fas fa-phone-volume fa-4x mb-4"></i>
                 <p class="font-weight-bold text-secondary">+977-9815459421</p>
@@ -134,9 +140,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark pt-2 pb-1 ">
+    <div class="container-fluid bg-dark pt-3 pb-3">
         <p class="text-white text-center">&copy; Asnu Tech 2020</p>
     </div>
+    <script>
+        function myFunction() {
+            document.getElementById("demo1").innerHTML = "We Welcome to you Anshu Tech. We proudly announce you as a part of Our Community.I hope you will enjoy your time with us.Thank You! "
+        }
+    </script>
 
 </body>
 

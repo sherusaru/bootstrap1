@@ -1,16 +1,8 @@
-h2{
-    color: lightseagreen;
-}
-#legend{
-    text-align: center;
-}
-.form{
-    width: 60%;
-    border: 2px solid saddlebrown;
-    padding: 0px 30px 30px 30px;
-    margin: auto;
-    
-}
-.field{
-    padding: 20px;
+
+body{
+    background-image: url(../images/computer_keyboard_mouse_laptop_mac_apple_66734_1920x1080.jpg);
+    background-repeat:no-repeat;
+    display: compact;
+    background-size: 1520px 800px;
+    opacity: 0.9;
 }

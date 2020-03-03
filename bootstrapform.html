@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/form.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -18,23 +19,69 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-lg-center">
-            <div class="col-lg-4" style="border: 2px solid black;">
-                <h3 class="text-primary text-center">Registration Form</h3>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="text" name="" id="" class="form-control">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <a class="nav-link" href="ansu.html">
+            <img src="images/logo.png" class="rounded" style="width: 50px;">
+        </a>
+        <ul class="nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="ansu.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#ourservices">Our Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning" href="#contactus">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="bootstrapform.html" class="btn btn-outline-warning"><i class="fas fa-user-plus"></i> Sign
+                    Up</a>
+            </li>
+        </ul>
+    </nav>
+    <form>
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row d-flex justify-content-lg-center" style="font-family:Trebuchet MS, Helvetica, sans-serif;">
+                <div class="col-lg-4 font-weight-bold rounded bg-white" style="border: 2px solid black;">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-user-circle fa-5x mt-2 mb-2"></i>
+                    </div>
+                    <h6 class="text-primary text-center mb-5 font-weight-bold">Registration Form</h6>
+                    <div class="form-group">
+                        <label for="demo1">Name:</label>
+                        <input type="text" class="form-control" placeholder="Your Name" id="demo1">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" name="" id="address" class="form-control" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="form-control" placeholder="jondoe@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                        <label class="custom-control-label mb-2" for="customControlInline">I agree all the Terms and
+                            Conditions</label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block text-center mb-5">Sign Up</button>
                 </div>
             </div>
         </div>
+    </form>
+    <div class="container-fluid bg-dark pt-3 pb-3">
+        <p class="text-white text-center">&copy; Asnu Tech 2020</p>
     </div>
 </body>
 
